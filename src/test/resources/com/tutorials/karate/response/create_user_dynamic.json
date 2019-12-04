@@ -1,0 +1,6 @@
+{
+	 "name": #(Fname),
+	 "job": #(job),
+	 "id": #string,
+	 "createdAt": #present 
+}

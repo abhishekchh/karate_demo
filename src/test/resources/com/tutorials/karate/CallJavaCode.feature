@@ -3,10 +3,10 @@ Feature: Test Single User API
   Background: 
     * configure headers = { Accept: 'application/json' }
     * url 'https://reqres.in/api/'
-    * def DemoClass = Java.type('com.tutorials.karate.Util')
-    * def demoClass = new DemoClass()
-    * def index = demoClass.two()
-    * def email = demoClass.email()
+    * def UtilClass = Java.type('com.tutorials.karate.Util')
+    * def utilObj = new UtilClass()
+    * def index = utilObj.two()
+    * def email = utilObj.email()
     * print index, email
 
   Scenario: Fetch single users

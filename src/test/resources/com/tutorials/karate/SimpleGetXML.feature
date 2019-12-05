@@ -62,8 +62,7 @@ Feature: Test Single User API
       
 
   Scenario: Validate XML based services from file
-    Given url 'http://www.dneonline.com/calculator.asmx'
-    And request read('request/add.xml')
+    Given request read('request/add.xml')
     When method POST
     Then status 200
     And match response == read('response/add.xml')
